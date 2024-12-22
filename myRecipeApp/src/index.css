@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 111px;
+  padding: 24px 16px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.recipe-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef-logo {
+  width: 50px;
+  height: 52px;
+  margin-right: 10px;
+}
+
+.chef-heading {
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
