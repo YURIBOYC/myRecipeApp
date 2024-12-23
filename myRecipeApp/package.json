@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.1.0-canary-6907aa2a-20241220",
+    "react-dom": "^19.1.0-canary-6907aa2a-20241220"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
