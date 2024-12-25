@@ -1,4 +1,4 @@
-import chef from "/public/images/assets/chef.png";
+import chef from "/images/assets/chef.png";
 
 export default function Header() {
   return (
