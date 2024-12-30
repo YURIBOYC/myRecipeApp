@@ -19,7 +19,7 @@ export default function Main() {
     if (recipe !== "" && recipeRef !== null) {
       // recipeRef.current.scrollIntoView({ behavior: "smooth" });
       const yCoord =
-        recipeSection.current.getBoundingClientRect().top + window.scrollY;
+        recipeRef.current.getBoundingClientRect().top + window.scrollY;
       window.scroll({
         top: yCoord,
         behavior: "smooth",
