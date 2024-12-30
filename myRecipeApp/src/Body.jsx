@@ -13,6 +13,14 @@ export default function Main() {
     console.log(recipeMarkdown);
   }
 
+  const recipeRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (recipe !== "" && recipeRef !== null) {
+      recipeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
     setIngredients((prevIngredients) => {
@@ -32,7 +40,11 @@ export default function Main() {
         <button>Add Ingredient</button>
       </form>
       {ingredients.length > 0 ? (
-        <IngredientsList ingredients={ingredients} getRecipe={getRecipe} />
+        <IngredientsList
+          ref={recipeRef}
+          ingredients={ingredients}
+          getRecipe={getRecipe}
+        />
       ) : null}
       {recipe && <Recipe recipe={recipe} />}
     </main>
