@@ -24,8 +24,9 @@ export default function Main() {
         top: yCoord,
         behavior: "smooth",
       });
+      console.log("Scrolled maybe?");
     }
-  }, []);
+  }, [recipe]);
 
   function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
